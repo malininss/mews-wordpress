@@ -6,7 +6,7 @@
   }
 
   &__card {
-    background: linear-gradient(45deg, #100800eb, #f8a2615c);
+    // background: linear-gradient(45deg, #100800eb, #f8a2615c);
     background-size: cover;
     width: calc(33.33333% - 13.5px);
     margin-bottom: 20px;
@@ -27,7 +27,7 @@
 
   &__card-text {
     margin-bottom: 20px;
-    color: #fff;
+    color: $black-color;
   }
 
   &__card-background {

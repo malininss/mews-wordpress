@@ -21,23 +21,24 @@
 
   &__img {
     width: 50%;
-    background: url(../img/banner-img.png) top left / cover no-repeat;
+    background: url(./img/banner-img.png) top left / cover no-repeat;
     border-radius: 0 0 0 420px;
   }
 }
 
 .horse-bg-screen {
-  position: relative;
+  // position: relative;
   height: 100vh;
   min-height: 650px;
   overflow: hidden;
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
+  // box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
 
   &__background {
     width: 100%;
     z-index: -100;
+    top: 20px;
     position: absolute;
-    height: 100vh;
+    // height: 100vh;
     min-height: 800px;
 
     img {

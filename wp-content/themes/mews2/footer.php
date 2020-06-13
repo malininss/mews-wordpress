@@ -8,17 +8,13 @@
     <div class="footer__block">
       <div class="footer__menu">
         <nav>
-          <ul>
-            <li><a href="about.html" class="footer__menu-link">О нас</a></li>
-            <li><a href="news.html" class="footer__menu-link">Новости</a></li>
-            <li><a href="#" class="footer__menu-link">Правила</a></li>
-          </ul>
-          <ul>
-            <li><a href="service.html" class="footer__menu-link">Услуги</a></li>
-            <li><a href="service-page.html" class="footer__menu-link">Занятия</a></li>
-            <li><a href="service-page.html" class="footer__menu-link">Постой</a></li>
-          </ul>
-        </nav>
+        <?php
+          wp_nav_menu(array(
+            'theme_location' => 'footer',
+            'container' => 'ul',
+            'menu_class' => 'footer__menu-mobile-cont'
+          ));
+        ?>
       </div>
     </div>
     <div class="footer__block">

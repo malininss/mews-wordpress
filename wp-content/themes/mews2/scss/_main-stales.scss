@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 74px;
-  line-height: 85px;
+  line-height: 66px;
   margin-bottom: 20px;
 }
 
@@ -87,6 +87,7 @@ p, li {
 ol {
   margin-left: 20px;
 }
+
 .grey-text {
   color: $grey-color;
 }
@@ -149,6 +150,20 @@ ol {
 .center-block {
   text-align: center;
 }
+
+.article__text {
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+
+
 
 .header {
   padding-top: 20px;
@@ -250,6 +265,14 @@ ol {
     left: -220px;
     box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
     transition: left 0.5s;
+
+    li {
+      margin: 20px 0 0 20px !important;
+
+      a {
+        margin-left: 0;
+      }
+    }
   }
 
   &__menu_active {
@@ -324,6 +347,9 @@ ol {
     line-height: 26px;
   }
   
+  &__menu a {
+    color: #fff;
+  }
 
   &__contacts-phone {
     a {
@@ -342,7 +368,7 @@ ol {
       position: absolute;
       left: -44px;
       top: 4px;
-      background-image: url(../img/marker.svg);
+      background-image: url(./img/marker.svg);
       height: 43px;
       width: 29px;
     }
@@ -355,14 +381,19 @@ ol {
       list-style-type: none;
     }
 
-    ul:first-child {
+    ul {
       margin-right: 40px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 200px;
     }
 
     li {
       list-style-type: none;
       &:not(:last-child) {
         margin-bottom: 30px;
+        margin-right: 30px;
       }
     }
   }
@@ -561,6 +592,17 @@ ol {
 
     &__menu, &__contacts, &__social {
       font-size: 18px;
+    }
+
+    &__menu {
+      ul {
+        width: 100%;
+        margin: 0;
+      }
+
+      li {
+        margin: 20px !important;
+      }
     }
 
     &__contacts {

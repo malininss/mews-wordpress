@@ -20,7 +20,7 @@
   }
 
   &__description-container_active {
-    display: block;
+    display: block !important;
   }
 
   &__links {
@@ -123,5 +123,19 @@
         border-right: 8px solid transparent;
       }
     }
+
+    &__description-container-mobile {
+      display: none;
+    }
   }
 }
+
+@media (min-width: 768px) {
+  .price__description-container-mobile {
+    display: none !important;
+  }
+}
+
+
+
+
